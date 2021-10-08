@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header{
+    background-image: url(../1.jpg);
+    height: 160vh;
+    background-size: cover;
+    background-position: center;
+    opacity: 100%;
+}
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+ 
+  color: white;
+}  
+.cnt{
+
+    margin: auto;
+    width: 20%;
+    padding: 10px;
+}

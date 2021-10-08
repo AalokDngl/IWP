@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header{
+    background-image: url(../1.jpg);
+    height: 160vh;
+    background-size: cover;
+    background-position: center;
+    opacity: 100%;
+}
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+ 
+  color: white;
+}  
+.center
+{
+    margin: auto;
+    width: 20%;
+    padding: 10px;
+}
+.container {  
+    padding: 50px;  
+  background-color: lightblue;  
+}  
+
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 5px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 25%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+.form{
+    padding: 15px;
+    margin: 15px;
+    width: auto;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='CSS/form.css'>
+  <script src='main.js'></script>
+    <script>
+        function validateForm() {
+            var name = document.forms["myForm"]["fname"];
+            var email = document.forms["myForm"]["fname1"];
+            var address2 = document.forms["myForm"]["fname4"];
+            var what = document.forms["myForm"]["fname3"];
+            var password = document.forms["myForm"]["fname2"];
+            var address = document.forms["myForm"]["fname3"];
+      
+            if (name.value == "") {
+                window.alert("Please enter your name.");
+                name.focus();
+                return false;
+            }
+            if (email.value == "") {
+                window.alert(
+                  "Please enter a valid e-mail address.");
+                email.focus();
+                return false;
+            }
+            if (password.value == "") {
+                window.alert("Please enter your password");
+                password.focus();
+                return false;
+            }
+            
+            if (address.value == "") {
+                window.alert("Please enter your address.");
+                address.focus();
+                return false;
+            }
+            
+                  if (address2.value == "") {
+                      window.alert(
+                        "Please enter your Address line 2.");
+                      address2.focus();
+                      return false;
+                  }
+      
+
+      
+            return true;
+        }
+    </script>
+    <!--<script>
+        function validateForm() {
+          let x = document.forms["myForm"]["fname"].value;
+          if (x == "") {
+            alert("Name must be filled out");
+            return false;
+          }
+        }
+        </script>-->
+<style> 
+
+</style>  
+</head>
+<body>
+  <header>
+<div class="center">
+  <h1>Resitration form:</h1>
+  <div class="form">
+    <form id="myForm" action="ind.php" method="POST" onsubmit="return validateForm()" method="POST"> 
+
+        <table> 
+        <tr> <td> First Name: </td> <td> <input type="text" id="fname" name="fname"> </td> </tr>
+        <tr> <td> Email Address: </td> <td> <input type=”text” id="fname1" name="fname1"> </td> </tr> 
+        <tr> <td> Password: </td> <td> <input type=”Password” id="fname2" name="fname2"> </td> </tr>
+        <tr> <td> Address: </td> <td> <input type="text" id="fname3" name="fname3"> </td> </tr> 
+        <tr> <td> Address Line 2: </td> <td> <input type="text" id="fname4" name="fname4"> </td> </tr> 
+        </table> 
+        <label>   
+        Gender:  
+        </label>   
+        <select>  
+        <option value="Male">Male</option>  
+        <option value="Female">Female</option>  
+        <option value="LGBTQ+">LGBTQ+</option>  
+        <option value="Other">Other</option>  
+        </select>  
+        <br>
+        <input type="radio" id="18" name="18" value="18">
+          <label for="18">I am above 18</label><br>
+          <input type="radio" id="18" name="18" value="18">
+          <label for="18">I am not above 18</label><br>
+        <br>
+        Terms and Agreements:
+        <br>
+        <input type="checkbox" id="t1" name="t1" value="t1">
+          <label for="t1"> I accept the terms and agreements</label><br>
+          <input type="checkbox" id="t2" name="t2" value="t2">
+          <label for="t2"> I accept to receive mails from this site</label><br>
+        <button type="submit" class="registerbtn">Register</button>
+        </form> 
+        </div>
+</div>
+</header>
+</body>
+</html>

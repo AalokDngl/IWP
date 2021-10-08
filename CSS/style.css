@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gothic Noir';
+}
+header{
+    background-image: url(../1.jpg);
+    height: 160vh;
+    background-size: cover;
+    background-position: center;
+    opacity: 100%;
+}
+#clock {
+    color:bisque; margin-top: 0px;font-size: 30px; border-color: #707070;padding: 10px;
+   }
+ul{
+    float: center;
+    list-style: none;
+
+}
+ul li{
+    display: inline-block;
+    margin-top: 40px;
+}
+ul li a{
+    text-decoration: none;
+    color:  rgb(255, 255, 255);
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.8s ease;
+}
+ul li a:hover{
+    background-color: white;
+    color: black;
+
+}
+ul li.active a{
+    background-color: white;
+    color: black;
+}
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+}
+.main {
+    max-width: 1200px;
+    margin: auto;
+}
+.title{
+    text-shadow: black;
+    color: rgb(0, 180, 180);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    color-adjust: white;
+    font-size: 70px;
+}
+.button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    border: 3px solid white;
+    padding: 10px 30px;
+    background-color: white;;
+    color: black;
+    text-decoration: none;
+    transition: 0.8s ease;
+}
+.btn:hover{
+    background-color: purple;
+    color: white;
+
+}
